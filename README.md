@@ -53,6 +53,30 @@ The project covers the full analytics lifecycle:
 
 ---
 
+## Dataset Description
+
+The project uses multi-source retail data combining CRM and ERP systems to simulate a real-world enterprise analytics environment.
+
+### Source Files
+
+#### CRM Source Data
+- `cust_info.csv` – customer master data, demographics, and profile information  
+- `prd_info.csv` – product catalog, pricing, and product hierarchy  
+- `sales_details.csv` – transactional sales records including orders, quantities, revenue, and dates  
+
+#### ERP Source Data
+- `CUST_AZ12.csv` – additional customer reference data  
+- `LOC_A101.csv` – country mapping data  
+- `PX_CAT_G1V2.csv` – product category and subcategory mapping data  
+
+The datasets were intentionally separated across systems to replicate common business data integration challenges.
+
+### Source-to-Warehouse Data Flow
+
+![Data Flow Diagram](docs/warehouse/architecture/data_flow_diagram.png)
+
+---
+
 ## Data Quality & Cleaning
 
 The source CRM and ERP datasets were intentionally modified to simulate real-world dirty data scenarios.  
