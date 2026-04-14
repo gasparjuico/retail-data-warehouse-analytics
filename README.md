@@ -213,15 +213,29 @@ This segmentation supports targeted marketing, retention, and product strategy.
 
 ```text
 retail-data-warehouse-analytics/
-│── datasets/
-│── sql/
+│── README.md
+│
+├── datasets/
+│   ├── raw/
+│   │   ├── crm/
+│   │   └── erp/
+│   └── processed/
+│
+├── sql/
 │   ├── warehouse/
+│   │   ├── scripts/
+│   │   └── tests/
 │   └── analytics/
-│── powerbi/
-│── docs/
-│   ├── warehouse/
-│   ├── analytics/
-│   └── dashboard/
+│       ├── scripts/
+│       └── outputs/
+│
+├── powerbi/
+│   └── retail_analytics_dashboard.pbix
+│
+└── docs/
+    ├── warehouse/
+    ├── analytics/
+    └── dashboard/
 ```
 
 ---
